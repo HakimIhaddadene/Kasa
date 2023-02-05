@@ -5,6 +5,7 @@ import Data from "../api/data.json"
 import SlideShow from "../components/SlideShow"
 import Tag from "../components/Tags"
 import Collapse from "../components/Collapse"
+import RatingSystem from "../components/RatingSystem"
 
 const SlideShowContainer = styled.div`
 width: 100%;
@@ -44,7 +45,6 @@ const Stars = styled.div`
 width: 100%;
 display: flex;
 justify-content: end;
-margin-right: 30px;
 `
 
 const DescriptionAndEquipment = styled.div`
@@ -93,7 +93,7 @@ function AccommodationSheet() {
 					))}
 				</Tags>
 				<Stars>
-					<p>{rating}</p>
+					<RatingSystem accommodationRating={rating} />
 				</Stars>
 			</TagsAndStars>
 			<DescriptionAndEquipment>
