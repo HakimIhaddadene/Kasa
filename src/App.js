@@ -1,3 +1,26 @@
+import React from "react"
+import GlobalStyle from './globalStyles';
+import Roads from './router/Roads'
+
+import styled from 'styled-components';
+
+const Container = styled.div`
+    width: 1240px;
+    margin: auto;
+`
+
+function App() {
+	return (
+    <Container>
+        <GlobalStyle />
+		    <Roads />
+    </Container>  
+	);
+}
+
+export default App;
+
+/*
 import logo from './logo.svg';
 import './App.css';
 
@@ -23,3 +46,4 @@ function App() {
 }
 
 export default App;
+*/
