@@ -7,15 +7,10 @@ import Tag from "../components/Tags"
 import Collapse from "../components/Collapse"
 import RatingSystem from "../components/RatingSystem"
 
-const SlideShowContainer = styled.div`
-width: 100%;
-margin-top: 50px;
-`
-
-const Image = styled.img`
+const SlideContainer = styled.div`
 width: 100%;
 height: 415px;
-object-fit: cover;
+margin-top: 50px;
 `
 
 const Title = styled.div`
@@ -66,7 +61,7 @@ function AccommodationSheet() {
 
 	const lodgingId = useParams();
 	const accommodationDetails = Data.find(lodging => lodging.id === lodgingId.id);
-	const { title, location, rating, equipments, description, cover } = accommodationDetails;
+	const { title, location, rating, equipments, description, cover, pictures } = accommodationDetails;
 	const equipmentsList =
 		equipments.map((item, index) => (
 			<li key={index}>
@@ -76,10 +71,9 @@ function AccommodationSheet() {
 
 	return (
 		<div>
-			<SlideShowContainer>
-				<SlideShow />
-				<Image img src={cover} alt="#" />
-			</SlideShowContainer>
+			<SlideContainer>
+				<SlideShow pics={pictures} />
+			</SlideContainer>
 			<Title>
 				<h1>{title}</h1>
 			</Title>
