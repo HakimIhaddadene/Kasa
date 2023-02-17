@@ -9,6 +9,9 @@ const HeaderContainer = styled.div`
     justify-content: space-between;
     margin-top: 30px;
     align-items: center;
+	@media (max-width: 768px) {
+	  width: 767px;
+	}
 `
 
 const LogoHeader = styled.img`

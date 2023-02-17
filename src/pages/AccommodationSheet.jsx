@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Data from "../api/data.json"
 import SlideShow from "../components/SlideShow"
@@ -11,16 +11,25 @@ const SlideContainer = styled.div`
 width: 100%;
 height: 415px;
 margin-top: 50px;
+@media (max-width: 768px) {
+  width: 767px;
+}
 `
 
 const Title = styled.div`
 width: 100%;
 padding: 10px 0;
 margin-top: 20px;
+@media (max-width: 768px) {
+  width: 767px;
+}
 `
 
 const City = styled.div`
 width: 100%;
+@media (max-width: 768px) {
+  width: 767px;
+}
 `
 
 const TagsAndStars = styled.div`
@@ -28,6 +37,10 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 margin-top: 20px;
+@media (max-width: 768px) {
+  width: 767px;
+  flex-direction: column;
+}
 `
 
 const Tags = styled.div`
@@ -39,7 +52,6 @@ margin-right: 30px;
 const Stars = styled.div`
 width: 100%;
 display: flex;
-justify-content: end;
 `
 
 const DescriptionAndEquipment = styled.div`
@@ -47,6 +59,10 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 margin-top: 30px;
+@media (max-width: 768px) {
+  width: 100%;  
+  flex-direction: column;
+}
 `
 
 const DescriptionAndEquipmentElement = styled.div`
@@ -61,7 +77,7 @@ function AccommodationSheet() {
 
 	const lodgingId = useParams();
 	const accommodationDetails = Data.find(lodging => lodging.id === lodgingId.id);
-	const { title, location, rating, equipments, description, cover, pictures } = accommodationDetails;
+	const { id, title, location, rating, equipments, description, pictures } = accommodationDetails;
 	const equipmentsList =
 		equipments.map((item, index) => (
 			<li key={index}>

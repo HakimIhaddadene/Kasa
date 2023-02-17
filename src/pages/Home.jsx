@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Banner from "../components/Banner"
 import Card from "../components/Card"
 import Data from "../api/data.json"
+import GlobalStyles from "../globalStyles"
 
 const CardContainer = styled.div`
     width: 100%;
@@ -11,6 +12,9 @@ const CardContainer = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 50px;
+	@media (max-width: 768px) {
+	    flex-direction: column;
+	}
 `
 
 function Home() {

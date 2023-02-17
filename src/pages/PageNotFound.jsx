@@ -6,6 +6,10 @@ const PageNotFoundContainer = styled.div`
     width: 100%;
     display: flex;
 	flex-direction: column;
+	@media (max-width: 768px) {
+	    width: 767px;
+		margin-top: 250px;
+	}   
 `
 
 const Error404 = styled.span`
@@ -22,6 +26,9 @@ const NotFound = styled.span`
     display: flex;
     justify-content: center;
 	margin-top: 30px;
+	@media (max-width: 768px) {
+		text-align: center;
+	}   
 `
 
 const ReturnToHome = styled.a`
@@ -32,6 +39,10 @@ const ReturnToHome = styled.a`
     justify-content: center;
 	margin-top: 100px;
 	margin-bottom: 100px;
+	@media (max-width: 768px) {
+		margin-top: 150px;
+		margin-bottom: 300px;
+	}   
 `
 
 function PageNotFound() {

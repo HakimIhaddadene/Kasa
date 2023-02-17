@@ -9,6 +9,9 @@ const FooterContainer = styled.div`
     margin-top: 50px;
     text-align: center;
     padding: 50px 0 30px 0;
+	@media (max-width: 768px) {
+	  width: 767px;
+	}
 `
 
 const LogoFooter = styled.img`

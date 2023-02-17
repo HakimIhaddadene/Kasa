@@ -14,6 +14,9 @@ const BannerContainer = styled.div`
         ),url(${banner});
     border-radius: 25px;
     margin-top: 50px;
+	@media (max-width: 768px) {
+	  width: 767px;
+	}
 `
 
 const CardTitle = styled.h1`

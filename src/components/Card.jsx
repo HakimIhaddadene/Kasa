@@ -3,18 +3,24 @@ import styled from 'styled-components'
 
 const CardElement = styled.div`
     width: 350px;
-    background: linear-gradient(180deg, #FF6060 0%, #A74141 100%);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     margin-top: 30px;
     padding-bottom: 15px;
-    
+    background: linear-gradient(180deg, #FF6060 0%, #A74141 100%); 
+	@media (max-width: 768px) {
+	    width: 767px;
+	}   
 `
 
 const CardImage = styled.div`
     width: 100%;
     height: 200px;
+	@media (max-width: 768px) {
+        height: 500px;
+        padding-bottom: 20px;
+	}   
 `
 
 const Pic = styled.img`
