@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 15px 10px;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    margin: auto;
   }
 
   p {

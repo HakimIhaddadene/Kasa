@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Banner from "../components/Banner"
 import Card from "../components/Card"
 import Data from "../api/data.json"
-import GlobalStyles from "../globalStyles"
 
 const CardContainer = styled.div`
     width: 100%;

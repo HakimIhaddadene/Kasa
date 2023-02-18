@@ -52,12 +52,12 @@ function SlideShow({pics}) {
             <SlideShowContainer>
                 <RightArrowContainer>
                     {numberOfPictures > 1 && (
-                        <img src={rightArrow} alt="Image suivante" onClick={nextPicture} />
+                        <img src={rightArrow} alt="Suivante" onClick={nextPicture} />
                     )}     
                 </RightArrowContainer> 
                 <LeftArrowContainer>       
                     {numberOfPictures > 1 && (
-                        <img src={leftArrow} alt="Image précédente" onClick={previousPicture} />
+                        <img src={leftArrow} alt="Précédente" onClick={previousPicture} />
                     )}
                 </LeftArrowContainer>
                 {pics.map((image, index) => {

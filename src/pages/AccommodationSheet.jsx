@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams, Navigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import Data from "../api/data.json"
 import SlideShow from "../components/SlideShow"
@@ -77,7 +77,7 @@ function AccommodationSheet() {
 
 	const lodgingId = useParams();
 	const accommodationDetails = Data.find(lodging => lodging.id === lodgingId.id);
-	const { id, title, location, rating, equipments, description, pictures } = accommodationDetails;
+	const { title, location, rating, equipments, description, pictures } = accommodationDetails;
 	const equipmentsList =
 		equipments.map((item, index) => (
 			<li key={index}>
