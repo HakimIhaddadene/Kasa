@@ -46,10 +46,9 @@ const LogoHeader = styled.img`
     }
 `
 
-const LinkNav = styled.a`
-    font-size: 24px;
+const LinkNav = styled.div`
+    display: flex;
 	color: #FF6060;   
-    margin-left: 50px;
     @media ${device.mobileS} { 
         font-size: 15px;
         margin-left: 20px;

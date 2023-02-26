@@ -5,6 +5,7 @@ import Banner from "../components/Banner"
 import Card from "../components/Card"
 import Data from "../api/data.json"
 import { device } from '../device'
+import bannerHome from '../images/home/banner.png'
 
 const CardContainer = styled.div`
     width: 100%;
@@ -37,7 +38,7 @@ const CardContainer = styled.div`
 function Home() {
 	return (
 		<div>
-			<Banner />
+			<Banner picture={bannerHome} title="Chez vous, partout et ailleurs" />
 			<CardContainer>
 				{Data.map((lodging, id) => (
 					<div key={id}>

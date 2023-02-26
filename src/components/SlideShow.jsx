@@ -108,8 +108,8 @@ function SlideShow({pics}) {
     return (
         <div>
             <SlideShowContainer>
-                <RightArrowContainer>
-                    {numberOfPictures > 1 && (
+                <RightArrowContainer>                
+                    {numberOfPictures > 1 && (  // Affichage des flèches uniquement si numberOfPictures > 1
                         <img src={rightArrow} alt="Suivante" onClick={nextPicture} />
                     )}     
                 </RightArrowContainer> 

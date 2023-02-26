@@ -46,7 +46,7 @@ const CardTitle = styled.div`
     margin-top: 20px;
 `
 
-const LinkTo = styled.a`
+const LinkTo = styled.div`
     font-size: 18px;
 	color: #FFFFFF;   
 `

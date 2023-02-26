@@ -42,7 +42,7 @@ const NotFound = styled.span`
 	margin-top: 30px;
 `
 
-const ReturnToHome = styled.a`
+const ReturnToHome = styled.div`
     font-size: 18px;
 	color: #FF6060;
 	text-decoration: underline;
