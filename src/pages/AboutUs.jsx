@@ -2,12 +2,25 @@ import React from "react"
 import styled from 'styled-components'
 import Banner from "../components/BannerAboutUs"
 import Collapse from "../components/Collapse"
+import { device } from '../device'
 
 const CollapseContainerAboutUs = styled.div`
     width: 100%;
-	@media (max-width: 768px) {
-	  width: 767px;
-	}
+    @media ${device.mobileS} { 
+        width: 90%;
+    }
+    @media ${device.mobileM} { 
+        width: 80%;
+    }
+    @media ${device.mobileL} { 
+        width: 70%;
+    }
+    @media ${device.laptop} { 
+        width: 100%;
+    }
+    @media ${device.laptopL} { 
+        width: 100%;
+    }
 `
 
 function AboutUs() {

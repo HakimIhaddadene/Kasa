@@ -1,12 +1,27 @@
-import React from "react"
+import React from 'react'
 import styled from 'styled-components'
+import { device } from '../device'
 
 const TagsElement = styled.div`
-margin-right: 30px;
 color: #FFFFFF;
 background: #FF6060;
 border-radius: 10px;
 padding: 10px 30px;
+@media ${device.mobileS} { 
+    margin-right: 15px;
+}
+@media ${device.mobileM} { 
+    margin-right: 15px;
+}
+@media ${device.mobileL} { 
+    margin-right: 15px;
+}
+@media ${device.laptop} { 
+    margin-right: 30px;
+}
+@media ${device.laptopL} { 
+    margin-right: 30px;
+}
 `
 
 function Tags({tag}) {

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import { device } from '../device'
 
 const CardElement = styled.div`
     width: 350px;
@@ -9,18 +10,26 @@ const CardElement = styled.div`
     margin-top: 30px;
     padding-bottom: 15px;
     background: linear-gradient(180deg, #FF6060 0%, #A74141 100%); 
-	@media (max-width: 768px) {
-	    width: 767px;
-	}   
+    @media ${device.mobileS} { 
+        width: 100%;
+    }
+    @media ${device.mobileM} { 
+        width: 100%;
+    }
+    @media ${device.mobileL} { 
+        width: 100%;
+    }
+    @media ${device.laptop} { 
+        width: 300px;
+    }
+    @media ${device.laptopL} { 
+        width: 350px;
+    }
 `
 
 const CardImage = styled.div`
     width: 100%;
     height: 200px;
-	@media (max-width: 768px) {
-        height: 500px;
-        padding-bottom: 20px;
-	}   
 `
 
 const Pic = styled.img`

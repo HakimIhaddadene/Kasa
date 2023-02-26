@@ -2,11 +2,31 @@ import React from "react"
 import styled from 'styled-components'
 import FullStar from '../images/stars/full-star.png'
 import EmptyStar from '../images/stars/empty-star.png'
+import { device } from '../device'
 
 const RatingSystemContainer = styled.div`
     width: 100%;
     display: flex;
-    justify-content: end;
+    @media ${device.mobileS} { 
+        height: 15px;
+        justify-content: start;
+    }
+    @media ${device.mobileM} { 
+        height: 15px;
+        justify-content: start;
+    }
+    @media ${device.mobileL} { 
+        height: 15px;
+        justify-content: start;
+    }
+    @media ${device.laptop} { 
+        height: 30px;
+        justify-content: end;
+    }
+    @media ${device.laptopL} { 
+        height: 30px;
+        justify-content: end;
+    }
 `
 
 function RatingSystem({accommodationRating}) {

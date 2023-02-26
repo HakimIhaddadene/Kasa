@@ -1,11 +1,29 @@
-import React from "react"
-import GlobalStyle from './globalStyles';
+import React from 'react'
+import GlobalStyle from './globalStyles'
 import Roads from './router/Roads'
-
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { device } from './device'
 
 const Container = styled.div`
     margin: auto;
+    @media ${device.mobileS} { 
+        max-width: 320px;
+    }
+    @media ${device.mobileM} { 
+        max-width: 375px;
+    }
+    @media ${device.mobileL} { 
+        max-width: 425px;
+    }
+    @media ${device.tablet} { 
+        max-width: 768px;
+    }
+    @media ${device.laptop} { 
+        max-width: 1024px;
+    }
+    @media ${device.laptopL} { 
+        max-width: 1240px;
+    }
 `
 
 function App() {

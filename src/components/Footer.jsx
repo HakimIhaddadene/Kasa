@@ -1,17 +1,30 @@
 import React from "react"
 import styled from 'styled-components'
 import logoFooter from "../images/logo-footer.png"
+import { device } from '../device'
 
 const FooterContainer = styled.div`
     width: 100%;
     background-color: #000000;
     color: #FFFFFF;
-    margin-top: 50px;
+    margin: 50px 0 20px 0;
     text-align: center;
-    padding: 50px 0 30px 0;
-	@media (max-width: 768px) {
-	  width: 767px;
-	}
+    padding: 50px 0 30px 0;	
+    @media ${device.mobileS} { 
+        width: 90%;
+    }
+    @media ${device.mobileM} { 
+        width: 80%;
+    }
+    @media ${device.mobileL} { 
+        width: 70%;
+    }
+    @media ${device.laptop} { 
+        width: 100%;
+    }
+    @media ${device.laptopL} { 
+        width: 100%;
+    }
 `
 
 const LogoFooter = styled.img`

@@ -6,10 +6,10 @@ import SlideShow from "../components/SlideShow"
 import Tag from "../components/Tags"
 import Collapse from "../components/Collapse"
 import RatingSystem from "../components/RatingSystem"
+import { device } from '../device'
 
 const SlideContainer = styled.div`
 width: 100%;
-height: 415px;
 margin-top: 50px;
 `
 
@@ -18,11 +18,41 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 margin-top: 30px;
+@media ${device.mobileS} { 
+	flex-direction: column; 
+}
+@media ${device.mobileM} { 
+	flex-direction: column; 
+}
+@media ${device.mobileL} { 
+	flex-direction: column; 
+}
+@media ${device.laptop} { 
+	flex-direction: row;
+}
+@media ${device.laptopL} { 
+	flex-direction: row;
+}
 `
 
 const TitleCityAndTags = styled.div`
 display: flex;
 flex-direction: column;
+@media ${device.mobileS} { 
+	width: 100%;
+}
+@media ${device.mobileM} { 
+	width: 80%;
+}
+@media ${device.mobileL} { 
+	width: 70%;
+}
+@media ${device.laptop} { 
+	width: 100%;
+}
+@media ${device.laptopL} { 
+	width: 100%;
+}
 `
 
 const Title = styled.div`
@@ -37,22 +67,49 @@ margin: 10px 0 20px 0;
 const Tags = styled.div`
 width: 100%;
 display: flex;
-margin-right: 30px;
+flex-wrap: wrap;
 `
 
 const NamePictureAndStars = styled.div`
 display: flex;
-flex-direction: column;
-align-content: space-between;
+margin-top: 30px;
+@media ${device.mobileS} { 
+	flex-direction: row-reverse;
+	align-items: center;
+	width: 90%;
+}
+@media ${device.mobileM} { 
+	flex-direction: row-reverse;
+	align-items: center;
+	width: 80%;
+}
+@media ${device.mobileL} { 
+	flex-direction: row-reverse;
+	align-items: center;
+	width: 70%;
+}
+@media ${device.laptop} { 
+	flex-direction: column;
+	align-items: end;
+	margin-top: 0;
+}
+@media ${device.laptopL} { 
+	flex-direction: column;
+	align-items: end;
+	margin-top: 0;
+}
 `
 
 const NameAndPicture = styled.div`
 width: 175px;
 display: flex;
-margin-bottom: 20px;
-justify-content: flex-end;
-font-size: 21px;
 color: #FF6060;
+@media ${device.laptop} { 
+	margin-bottom: 20px;
+}
+@media ${device.laptopL} { 
+	margin-bottom: 20px;
+}
 `
 
 const Name = styled.div`
@@ -60,14 +117,51 @@ width: 110px;
 display: flex;
 align-items: center;
 text-align: right;
-margin-right: 15px;
+margin-right: 5px;
+@media ${device.mobileS} { 
+	font-size: 16px;
+}
+@media ${device.mobileM} { 
+	font-size: 16px;
+}
+@media ${device.mobileL} { 
+	font-size: 16px;
+}
+@media ${device.laptop} { 
+	font-size: 21px;
+}
+@media ${device.laptopL} { 
+	font-size: 21px;
+}
 `
 
 const Picture = styled.img`
-width: 64px;
-height: 64px;
-border-radius: 64px;
 background: #C4C4C4;
+@media ${device.mobileS} { 
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+}
+@media ${device.mobileM} { 
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+}
+@media ${device.mobileL} { 
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+}
+@media ${device.laptop} { 
+	width: 64px;
+	height: 64px;
+	border-radius: 64px;
+}
+@media ${device.laptopL} { 
+	width: 64px;
+	height: 64px;
+	border-radius: 64px;
+}
 `
 
 const DescriptionAndEquipment = styled.div`
@@ -75,10 +169,42 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 margin-top: 10px;
+@media ${device.mobileS} { 
+	flex-direction: column;
+}
+@media ${device.mobileM} { 
+	flex-direction: column;
+}
+@media ${device.mobileL} { 
+	flex-direction: column;
+}
+@media ${device.laptop} { 
+	flex-direction: row;
+}
+@media ${device.laptopL} { 
+	flex-direction: row;
+}
 `
 
 const DescriptionAndEquipmentElement = styled.div`
 width: 45%;
+@media ${device.mobileS} { 
+	width: 90%;
+}
+@media ${device.mobileM} { 
+	width: 80%;
+}
+@media ${device.mobileL} { 
+	width: 70%;
+}
+@media ${device.laptop} { 
+	width: 45%;
+	flex-direction: row;
+}
+@media ${device.laptopL} { 
+	width: 45%;
+	flex-direction: row;
+}
 `
 
 const List = styled.li`

@@ -1,12 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
+import { device } from './device'
  
 const GlobalStyles = createGlobalStyle`
   body {
     width: 1240px;
-    margin: 15px 10px;
+    margin: auto;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    margin: auto;
   }
 
   p {
@@ -29,6 +29,21 @@ const GlobalStyles = createGlobalStyle`
 
   h1 {
     font-size: 36px;
+    @media ${device.mobileS} { 
+      font-size: 23px;
+    }
+    @media ${device.mobileM} { 
+      font-size: 23px;
+    }
+    @media ${device.mobileL} { 
+      font-size: 23px;
+    }
+    @media ${device.laptop} { 
+      font-size: 36px;
+    }
+    @media ${device.laptopL} { 
+      font-size: 36px;
+    }
   }
 
   h2 {

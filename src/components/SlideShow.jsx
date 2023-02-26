@@ -3,35 +3,93 @@ import { useState } from 'react'
 import styled from 'styled-components'
 import rightArrow from '../images/arrows/right-arrow-slide-show.png'
 import leftArrow from '../images/arrows/left-arrow-slide-show.png'
+import { device } from '../device'
 
 const SlideShowContainer = styled.div`
 width: 100%;
 position: relative;
+@media ${device.mobileS} { 
+	width: 90%;
+}
+@media ${device.mobileM} { 
+	width: 80%;
+}
+@media ${device.mobileL} { 
+	width: 70%;
+}
+@media ${device.laptop} { 
+	width: 100%;
+}
+@media ${device.laptopL} { 
+	width: 100%;
+}
 `
 
 const Image = styled.img`
 width: 100%;
-height: 415px;
 object-fit: cover;
 border-radius: 25px;
+@media ${device.mobileS} { 
+    height: 255px;
+}
+@media ${device.mobileM} { 
+    height: 255px;
+}
+@media ${device.mobileL} { 
+    height: 255px;
+}
+@media ${device.laptop} { 
+    height: 415px;
+}
+@media ${device.laptopL} { 
+    height: 415px;
+}
 `
 
 const RightArrowContainer = styled.div`
 display: flex;
 position: absolute;
 right: 10px;
-top: 167px;
 cursor: pointer;
 background-color: transparent;
+@media ${device.mobileS} { 
+    top: 87px;
+}
+@media ${device.mobileM} { 
+    top: 87px;
+}
+@media ${device.mobileL} { 
+    top: 87px;
+}
+@media ${device.laptop} { 
+    top: 167px;
+}
+@media ${device.laptopL} { 
+    top: 167px;
+}
 `
 
 const LeftArrowContainer = styled.div`
 display: flex;
 position: absolute;
 left: 10px;
-top: 167px;
 cursor: pointer;
 background-color: transparent;
+@media ${device.mobileS} { 
+    top: 87px;
+}
+@media ${device.mobileM} { 
+    top: 87px;
+}
+@media ${device.mobileL} { 
+    top: 87px;
+}
+@media ${device.laptop} { 
+    top: 167px;
+}
+@media ${device.laptopL} { 
+    top: 167px;
+}
 `
 
 function SlideShow({pics}) {
