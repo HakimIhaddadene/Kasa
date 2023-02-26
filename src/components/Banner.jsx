@@ -1,46 +1,60 @@
 import React from "react"
 import styled from 'styled-components'
-import banner from '../images/home/banner.png'
 import { device } from '../device'
 
 const BannerContainer = styled.div`
     width: 100%;
     height: 223px;
+    position: relative;	
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-        ),url(${banner});
-    border-radius: 25px;
-    margin-top: 50px;	
     @media ${device.mobileS} { 
         width: 90%;
+        margin-top: 30px;
     }
     @media ${device.mobileM} { 
         width: 80%;
+        margin-top: 30px;
     }
     @media ${device.mobileL} { 
         width: 70%;
+        margin-top: 30px;
     }
     @media ${device.laptop} { 
         width: 100%;
+        margin-top: 50px;
     }
     @media ${device.laptopL} { 
         width: 100%;
+        margin-top: 50px;
     }
+`
+
+const Pic = styled.img`
+    width: 100%;
+    height: 223px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 25px;
 `
 
 const CardTitle = styled.h1`
     font-size: 48px;
     color: #FFFFFF;
+    
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
-function Banner() {
+function Banner({picture, title}) {
     return (
         <BannerContainer>
-            <h1><CardTitle>Chez vous, partout et ailleurs</CardTitle></h1>
+            <Pic src={picture} alt="" />
+            <CardTitle>{title}</CardTitle>
         </BannerContainer>
     )
 }
