@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Data from "../api/data.json"
 import SlideShow from "../components/SlideShow"
@@ -215,6 +215,7 @@ function AccommodationSheet() {
 
 	const lodgingId = useParams();
 	const accommodationDetails = Data.find(lodging => lodging.id === lodgingId.id);
+	if (accommodationDetails !== undefined) {
 	const { title, location, rating, equipments, description, host, pictures } = accommodationDetails;
 	const equipmentsList =
 		equipments.map((item, index) => (
@@ -259,6 +260,12 @@ function AccommodationSheet() {
 			</DescriptionAndEquipment>
 		</div>
 	);
+	}
+	else {
+		return (
+		<Navigate replace to="/PageNotFound"/>
+		)
+	}	
 }
 
 export default AccommodationSheet;
