@@ -42,10 +42,10 @@ flex-direction: column;
 	width: 100%;
 }
 @media ${device.mobileM} { 
-	width: 80%;
+	width: 100%;
 }
 @media ${device.mobileL} { 
-	width: 70%;
+	width: 100%;
 }
 @media ${device.laptop} { 
 	width: 100%;
@@ -76,17 +76,17 @@ margin-top: 30px;
 @media ${device.mobileS} { 
 	flex-direction: row-reverse;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 }
 @media ${device.mobileM} { 
 	flex-direction: row-reverse;
 	align-items: center;
-	width: 80%;
+	width: 100%;
 }
 @media ${device.mobileL} { 
 	flex-direction: row-reverse;
 	align-items: center;
-	width: 70%;
+	width: 100%;
 }
 @media ${device.laptop} { 
 	flex-direction: column;
@@ -189,13 +189,13 @@ margin-top: 10px;
 const DescriptionAndEquipmentElement = styled.div`
 width: 45%;
 @media ${device.mobileS} { 
-	width: 90%;
+	width: 100%;
 }
 @media ${device.mobileM} { 
-	width: 80%;
+	width: 100%;
 }
 @media ${device.mobileL} { 
-	width: 70%;
+	width: 100%;
 }
 @media ${device.laptop} { 
 	width: 45%;

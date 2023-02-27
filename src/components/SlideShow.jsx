@@ -6,16 +6,15 @@ import leftArrow from '../images/arrows/left-arrow-slide-show.png'
 import { device } from '../device'
 
 const SlideShowContainer = styled.div`
-width: 100%;
 position: relative;
 @media ${device.mobileS} { 
-	width: 90%;
+    width: 100%;
 }
 @media ${device.mobileM} { 
-	width: 80%;
+    width: 100%;
 }
 @media ${device.mobileL} { 
-	width: 70%;
+    width: 100%;
 }
 @media ${device.laptop} { 
 	width: 100%;

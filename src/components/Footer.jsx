@@ -4,20 +4,19 @@ import logoFooter from "../images/logo-footer.png"
 import { device } from '../device'
 
 const FooterContainer = styled.div`
-    width: 100%;
     background-color: #000000;
     color: #FFFFFF;
     margin: 50px 0 20px 0;
     text-align: center;
     padding: 50px 0 30px 0;	
     @media ${device.mobileS} { 
-        width: 90%;
+        width: 100%;
     }
     @media ${device.mobileM} { 
-        width: 80%;
+        width: 100%;
     }
     @media ${device.mobileL} { 
-        width: 70%;
+        width: 100%;
     }
     @media ${device.laptop} { 
         width: 100%;

@@ -5,19 +5,18 @@ import logo from "../images/logo.png"
 import { device } from '../device'
 
 const HeaderContainer = styled.div`
-    width: 100%;
     display: flex;
     justify-content: space-between; 
     align-items: center;	
     margin-top: 30px;
     @media ${device.mobileS} { 
-        width: 90%;
+        width: 100%;
     }
     @media ${device.mobileM} { 
-        width: 80%;
+        width: 100%;
     }
     @media ${device.mobileL} { 
-        width: 70%;
+        width: 100%;
     }
     @media ${device.laptop} { 
         width: 100%;

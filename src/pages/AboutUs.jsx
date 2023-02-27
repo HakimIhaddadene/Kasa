@@ -8,13 +8,13 @@ import bannerAboutUs from '../images/about/banner.jpg'
 const CollapseContainerAboutUs = styled.div`
     width: 100%;
     @media ${device.mobileS} { 
-        width: 90%;
+        width: 100%;
     }
     @media ${device.mobileM} { 
-        width: 80%;
+        width: 100%;
     }
     @media ${device.mobileL} { 
-        width: 70%;
+        width: 100%;
     }
     @media ${device.laptop} { 
         width: 100%;

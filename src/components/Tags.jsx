@@ -7,6 +7,7 @@ color: #FFFFFF;
 background: #FF6060;
 border-radius: 10px;
 padding: 10px 30px;
+margin-bottom: 10px;
 @media ${device.mobileS} { 
     margin-right: 15px;
 }

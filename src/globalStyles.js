@@ -3,10 +3,24 @@ import { device } from './device'
  
 const GlobalStyles = createGlobalStyle`
   body {
-    width: 1240px;
     margin: auto;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    @media ${device.mobileS} { 
+        width: 100%;
+    }
+    @media ${device.mobileM} { 
+        width: 100%;
+    }
+    @media ${device.mobileL} { 
+        width: 100%;
+    }
+    @media ${device.laptop} { 
+        width: 100%;
+    }
+    @media ${device.laptopL} { 
+        width: 100%;
+    }
   }
 
   p {

@@ -4,19 +4,18 @@ import styled from 'styled-components'
 import { device } from '../device'
 
 const PageNotFoundContainer = styled.div`
-    width: 100%;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
     @media ${device.mobileS} { 
-        width: 80%;
+        width: 100%;
     }
     @media ${device.mobileM} { 
-        width: 80%;
+        width: 100%;
     }
     @media ${device.mobileL} { 
-        width: 70%;
+        width: 100%;
     }
     @media ${device.laptop} { 
         width: 100%;

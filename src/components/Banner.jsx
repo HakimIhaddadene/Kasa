@@ -9,24 +9,20 @@ const BannerContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     @media ${device.mobileS} { 
-        width: 90%;
         margin-top: 30px;
     }
     @media ${device.mobileM} { 
-        width: 80%;
         margin-top: 30px;
     }
     @media ${device.mobileL} { 
-        width: 70%;
         margin-top: 30px;
     }
     @media ${device.laptop} { 
-        width: 100%;
         margin-top: 50px;
     }
     @media ${device.laptopL} { 
-        width: 100%;
         margin-top: 50px;
     }
 `
@@ -41,8 +37,7 @@ const Pic = styled.img`
 
 const CardTitle = styled.h1`
     font-size: 48px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;    
     position: absolute;
     background-color: transparent;
     display: flex;
