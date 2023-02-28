@@ -45,8 +45,11 @@ const LogoHeader = styled.img`
     }
 `
 
-const LinkNav = styled.div`
+const Nav = styled.nav`
     display: flex;
+`
+
+const LinkNav = styled.div`
 	color: #FF6060;   
     @media ${device.mobileS} { 
         font-size: 15px;
@@ -75,10 +78,10 @@ function Header() {
         <header>
             <HeaderContainer>
             <NavLink to="/"><LogoHeader src={logo} alt="Logo de Kasa" /></NavLink>
-                <nav>
+                <Nav>            
                     <NavLink to="/"><LinkNav>Accueil</LinkNav></NavLink>
-                    <NavLink to="/aboutus"><LinkNav>À propos</LinkNav></NavLink>
-                </nav>
+                    <NavLink to="/aboutus"><LinkNav>À propos</LinkNav></NavLink>                
+                </Nav>    
             </HeaderContainer>
         </header>
     )
